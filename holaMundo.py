@@ -9,5 +9,13 @@ for i,hola in enumerate(array):
         espacio=" "
     print(i)
     concatenacion+=espacio+hola
-
-print(concatenacion)
+i=1
+total=0
+while i>0:
+    
+    numero=int(input('dame un numero: '))
+    if numero==0:
+        break
+    total+=numero
+    i+=1
+print("total= " + str(total) )
