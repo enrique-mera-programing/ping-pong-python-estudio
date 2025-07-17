@@ -11,7 +11,7 @@ Azul = (0,100,255)
 reloj = pygame.time.Clock()
 jugador= 1
 
-# dibujar cuadrado
+# dibujar cuadrado (posicion derecha, posicion arriba, ancho, alto)
 cuadrado=pygame.Rect(ANCHO/2,0,5,ALTO)
 cuadrado1=pygame.Rect(0,0,5,ALTO)
 
