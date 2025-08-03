@@ -1,4 +1,4 @@
-import pygame
+import pygame, sys
 
 # Inicializar pygame
 pygame.init()
@@ -26,7 +26,8 @@ while jugador==1:
     for evento in pygame.event.get():
         if evento.type==pygame.QUIT:
             pygame.quit() # cierra el MODULOS en ejecucion de pygame para evitar q se cuelgue y asi
-
+            sys.exit()
+            
     # pinta la ventana del color
     ventana.fill(Azul)
 

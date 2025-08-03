@@ -1,4 +1,4 @@
-import pygame
+import pygame, sys
 
 pygame.init()
 
@@ -22,6 +22,7 @@ while jugador==1:
     for evento in pygame.event.get():
         if evento.type==pygame.QUIT:
             pygame.quit() 
+            sys.exit()
 
     #leer las teclas a precionar
     teclas=pygame.key.get_pressed()

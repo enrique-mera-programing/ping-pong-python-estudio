@@ -1,4 +1,4 @@
-import pygame
+import pygame, sys
 
 pygame.init()
 ventana = pygame.display.set_mode((800, 600))
@@ -13,6 +13,7 @@ while True:
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
             pygame.quit()
+            sys.exit()
 
         # Evento de tecla presionada (solo una vez)
         if evento.type == pygame.KEYDOWN:
